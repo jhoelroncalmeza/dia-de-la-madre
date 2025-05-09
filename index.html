@@ -1,1 +1,100 @@
-<!DOCTYPE html><html><head><title>Temporal</title></head><body></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebración Especial | San Vicete Textil Cotton</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&family=Parisienne&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Elementos decorativos animados -->
+        <div class="floating-heart" style="left:10%; top:20%; animation-delay:0s;">🌸</div>
+        <div class="floating-heart" style="left:80%; top:30%; animation-delay:1.5s;">✨</div>
+        <div class="floating-heart" style="left:30%; top:70%; animation-delay:2.3s;">💖</div>
+        
+        <!-- Tarjeta principal -->
+        <div class="card">
+            <div class="card-header">
+                <h1 class="celebration-title">Para las Mamás Especiales</h1>
+                <h2 class="celebration-subtitle">San Vicete Textil Cotton les dedica este día</h2>
+            </div>
+            
+            <!-- Carrusel interactivo -->
+            <div class="photo-frame">
+                <div class="photo-carousel">
+                    <!-- Patricia - 7 años -->
+                    <div class="photo active">
+                        <img src="assets/img/mama1.jpg" alt="Patricia">
+                        <div class="photo-caption">
+                            <span class="employee-name">Patricia</span>
+                            <span class="employee-years" data-years="7">7 años con nosotros</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Aldi - 3 años -->
+                    <div class="photo">
+                        <img src="assets/img/mama2.jpg" alt="Aldi">
+                        <div class="photo-caption">
+                            <span class="employee-name">Aldi</span>
+                            <span class="employee-years" data-years="3">3 años con nosotros</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Begonia - 5 años -->
+                    <div class="photo">
+                        <img src="assets/img/mama3.jpg" alt="Begonia">
+                        <div class="photo-caption">
+                            <span class="employee-name">Begonia</span>
+                            <span class="employee-years" data-years="5">5 años con nosotros</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Botones de navegación -->
+                <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+                
+                <!-- Efecto de transición -->
+                <div class="transition-overlay"></div>
+            </div>
+            
+            <!-- Mensaje emotivo -->
+            <div class="message">
+                <p class="message-text">Queridas mamás de nuestro equipo:</p>
+                
+                <p class="message-emphasis">Su dedicación y amor transforman cada día en algo extraordinario. En el trabajo y en el hogar, son fuente de inspiración.</p>
+                
+                <p class="message-closing">Hoy celebramos ese corazón que comparten con todos nosotros.</p>
+                
+                <!-- Juego interactivo -->
+                <div class="game-container">
+                    <button id="play-game-btn" class="game-button">Descubre tu mensaje especial</button>
+                    <div id="game-result" class="game-result"></div>
+                </div>
+                
+                <!-- Firma -->
+                <div class="signature">
+                    <p>Con todo nuestro cariño,</p>
+                    <p class="signature-name">Familia San Vicete Textil Cotton</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Efectos de audio -->
+    <audio id="background-music" loop>
+        <source src="assets/music.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="celebration-sound" src="assets/celebration.mp3"></audio>
+
+    <!-- Control de música -->
+    <div class="music-control">
+        <i class="fas fa-music"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
